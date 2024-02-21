@@ -135,3 +135,4 @@ const SummaryItemBox = ({ model, status, time, fee }) => {
 };
 
 export default SummaryItemBox;
+ 
