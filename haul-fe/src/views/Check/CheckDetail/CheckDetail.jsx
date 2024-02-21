@@ -149,3 +149,4 @@ const CheckDetail = () => {
 };
 
 export default CheckDetail;
+ 
