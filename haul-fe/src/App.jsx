@@ -5,6 +5,7 @@ import theme from "./styles/theme/Theme.jsx";
 import "./assets/fonts/fonts.css";
 import ToastRoot from "./components/Toast/ToastRoot.jsx";
 import { ReservationStoreProvider } from "./store/reservationStore.jsx";
+import MobileInstallPrompt from "./components/AppInstallPrompt/MobileInstallPrompt.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Router />
         <ToastRoot />
       </ReservationStoreProvider>
+      <MobileInstallPrompt />
     </ThemeProvider>
   );
 }

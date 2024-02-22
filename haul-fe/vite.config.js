@@ -2,8 +2,12 @@ import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
+import basicSsl from "@vitejs/plugin-basic-ssl";
 
 export default defineConfig({
+  server: {
+    https: true
+  },
   plugins: [
     react(),
     svgr(),
@@ -44,6 +48,12 @@ export default defineConfig({
         name: "Haul",
         short_name: "Haul"
       }
+    }),
+    basicSsl({
+      //name of certification
+      name: "test",
+      //custom trust domains
+      domains: ["localhost"]
     })
   ]
 });
